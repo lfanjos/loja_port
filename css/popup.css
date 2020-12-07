@@ -1,0 +1,49 @@
+/**
+* No body insira onload=popup();
+* Criar uma div com a classe .popup-warning, dentro dela criar uma div com a classe .inner-popup
+* e então colocar o conteudo textual dentro dessa div e um botão para fechar o popup com onclick=popup();
+* link este arquivo e o arquivo popup.js
+*/
+
+.inner-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  padding: 30px 30px;
+  text-align: center;
+  height: 100px;
+  background-color: rgb(219, 219, 219);
+  border: 2px solid black;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.inner-popup button {
+  border: none;
+  background: none;
+  position: absolute;
+  font-size: 24px;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.popup-warning {
+  background-color: rgba(0, 0, 0, 0.781);
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.4s ease;
+  z-index: 100;
+}
+
+body > p {
+  display: block;
+  height: 50000px;
+}
